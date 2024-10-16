@@ -1,0 +1,97 @@
+body {
+  font-size: 0.5rem;
+}
+
+#container {
+  grid-template-areas: 
+    'header'
+    'nav'
+    'article'
+    'aside'
+    'footer';
+  grid-template-rows: auto;
+  gap: 0.5rem;
+}
+
+header {
+  padding: 0.5rem;
+}
+
+#logo{
+  height: 3rem;
+  padding: 0.1rem;
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 0;
+  text-align: center;
+}
+
+#navLinks {
+ padding: 0;
+}
+
+.individualNavLinks {
+  font-size: 1rem;
+}
+
+#infoList{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: auto;
+}
+
+.list img{
+  height: 2rem;
+  padding-right: 1rem;
+}
+
+.list p{
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+article {
+  padding: 1rem;
+  display: grid;
+  grid-template-areas: 
+    'education'
+    'employment'
+    'experience';
+  gap: 0.2rem;
+}
+
+#education{
+  grid-area: education;
+  margin: 0.2rem;
+}
+
+#employment{
+  grid-area: employment;
+  margin: 0.2rem;
+}
+
+#experience{
+  grid-area: experience;
+  margin: 0.2rem;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+.info, h2, h3, h4, h5, .eduInfo {
+  padding: 0.4rem;
+  font-size: 0.8rem;
+}
+
+.list {
+  grid-template-columns: auto;
+  padding: 0.3rem;
+  font-size: 1rem;
+}
+
+.footerImages {
+  max-width: 45%;
+}

@@ -1,0 +1,68 @@
+body {
+  font-size: 0.5rem;
+}
+
+#container {
+  grid-template-rows: auto;
+  gap: 0.5rem;
+}
+
+header {
+  padding: 0.5rem;
+}
+
+#logo{
+  height: 3rem;
+  padding: 0.1rem;
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 0;
+  text-align: center;
+}
+
+#navLinks {
+ padding: 0;
+}
+
+.individualNavLinks {
+  font-size: 1rem;
+}
+
+article {
+  padding: 1rem;
+}
+
+#underFig{
+  font-size: 1rem;
+}
+
+#myself {
+  flex-direction: column;
+  height: auto;
+}
+
+figure {
+  margin-bottom: 1rem;
+  grid-template-rows: auto 1fr 1fr;
+}
+
+figcaption,
+h2 {
+  font-size: 1.2rem;
+}
+
+#profilePic {
+  max-width: 100%;
+  padding: 1rem;
+}
+
+#aboutMe p {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.footerImages {
+  max-width: 45%;
+}

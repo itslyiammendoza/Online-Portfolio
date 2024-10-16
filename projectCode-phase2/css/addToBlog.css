@@ -1,0 +1,261 @@
+.loginDetail {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  padding-bottom: 3.5rem;
+  font-weight: bold;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: beige;
+}
+
+#container{
+  min-height: 100%;
+  display: grid;
+  grid-template-areas: 
+    'header'
+    'nav'
+    'article'
+    'footer';
+  grid-template-rows: 7rem 5rem 5fr 7rem;
+  gap: 0.7rem;
+}
+
+header{
+  background-color: rgb(26,116,125) ;
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  color:white;
+  justify-content: center;
+  align-items: center;
+}
+
+nav{
+  background-color: rgb(210,233,227);
+  grid-area: nav;
+  display: grid;
+  align-items: center;
+}
+
+article{
+  background-color: rgb(210,233,227) ;
+  grid-area: article;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+article form{
+  background-color: rgb(210,233,227) ;
+  grid-area: article;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section{
+  background-color: white;
+  grid-area: section;
+}
+
+footer{
+  background-color: rgb(26,116,125) ;
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  color:white;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#logo{
+  max-height: 3.5rem;
+  padding: 0.5rem;
+  color: white;
+  filter: invert(100%);
+  align-self: center;
+  text-align: center;
+  justify-self: center;
+}
+
+h1{
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  align-self: center;
+  text-align: center;
+  padding: 0.3rem;
+  flex: 1;
+  letter-spacing: 0.1rem;
+}
+
+#navLinks{
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-evenly;
+}
+
+.individualNavLinks {
+  text-decoration: none;
+  color: rgb(87, 52, 0);
+  transition: font-size 0.5s, color 0.5s, text-shadow 0.5s;
+  font-size: 1.2rem;
+}
+
+.individualNavLinks:hover {
+  color: rgb(119, 71, 0);
+  font-size: 1.3rem;
+  text-shadow: 3px 3px 3px grey;
+}
+
+.individualNavLinks:visited{
+  color: rgb(68, 41, 0);
+}
+
+.footerImages{
+  max-height: 3.5rem;
+  margin: 0.4rem;
+  padding: 0.6rem;
+  color: white;
+  filter: invert(100%);
+  align-self: center;
+  text-align: center;
+  justify-self: center;
+}
+
+fieldset{
+  background-color: rgb(168,214,229);
+  height: 28rem;
+  width: 40rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  border-color: rgb(26,116,125);
+}
+
+#title{
+  margin: 1rem;
+  font-size: 1.7rem;
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+
+#inputs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#inputs input{
+  font-family: "Bebas Neue", sans-serif;
+  width: 30rem;
+  font-size: 1.1rem;
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+#textBox{
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.1rem;
+  resize: none;
+}
+
+::placeholder{
+  color: lightgrey;
+  font-size: 0.8rem;
+  padding: 0.3rem;
+}
+
+#buttons input{
+  background-color: rgb(26,116,125);
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+  font-size: 1rem;
+  color: white;
+}
+
+#buttons input:hover{
+  background-color: rgb(21, 88, 94);
+}
+
+#buttons input:active {
+  background-color: rgb(14, 59, 63);
+  box-shadow: 0 5px rgb(116, 116, 116);
+  transform: translateY(4px);
+}
+
+
+hr{
+  width: 90%;
+  border: 1px solid rgb(26,116,125);
+}
+
+.entry, #entriesContainer{
+  padding: 1rem;
+  min-width: 85%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+#time{
+  font-size: 0.8rem;
+  color: grey;
+  text-align: right;
+}
+
+#blogTitle{
+  font-size: 1.3rem;
+  color: rgb(26,116,125);
+  padding: 0.5rem;
+}
+
+#blogText{
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+
+.missing {
+  border-color: red;
+}
+
+#monthSelect{
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.1rem;
+  width: 10rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.editButton, .uploadButton {
+  background-color: rgb(26,116,125);
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0.5rem 0.7rem 0.5rem 0.7rem;;
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+  font-size: 1rem;
+  color: white;
+}
+
+.editButton:hover, .uploadButton:hover {
+  background-color: rgb(21, 88, 94);
+}
+
+.editButton:active, .uploadButton:active {
+  background-color: rgb(14, 59, 63);
+  box-shadow: 0 5px rgb(116, 116, 116);
+  transform: translateY(4px);
+}
+
+#monthSelect{
+  align-self: center;
+}

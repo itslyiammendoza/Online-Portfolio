@@ -1,0 +1,193 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: beige;
+}
+
+#container{
+  min-height: 100%;
+  display: grid;
+  grid-template-areas: 
+    'header header'
+    'nav nav'
+    'aside article'
+    'footer footer';
+  grid-template-rows: 0.7fr 0.5fr 5fr 0.5fr;
+  gap: 0.7rem;
+}
+
+header{
+  background-color: rgb(26,116,125) ;
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  color:white;
+  justify-content: center;
+  align-items: center;
+}
+
+nav{
+  background-color: rgb(210,233,227);
+  grid-area: nav;
+  display: grid;
+  align-items: center;
+}
+
+article{
+  background-color: rgb(210,233,227) ;
+  grid-area: article;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Lora", serif;
+}
+
+section{
+  border: 1rem solid rgb(226,226,226);
+  grid-area: section;
+  margin: 1rem;
+}
+
+#infoBox{
+  display: grid;
+  grid-template-rows: auto auto;
+  text-align: center;
+}
+
+.title{
+  background-color: rgb(168,214,229) ;
+  padding: 0.4rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+#education p:nth-child(2){
+  padding: 0;
+}
+
+.info,h2, h3, h4, h5, .infoInfo{
+  background-color: white;
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}
+
+h2, h3, h4, h5{
+  font-size: 1.2rem;
+}
+
+.infoLink{
+  text-decoration: none;
+}
+
+.infoLink:visited{
+  color: inherit;
+}
+
+.infoInfo{
+  font-size: 1rem;
+}
+
+#skills p:nth-child(2){
+  padding: 0;
+}
+
+#infoList{
+  background-color: white;
+  margin: 0;
+  padding: 0.8rem;
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.list img{
+  max-height: 3rem;
+  padding-right: 1rem;
+}
+
+.list{
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+aside{
+  background-color: rgb(210,233,227) ;
+  grid-area: aside;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Lora", serif;
+}
+
+footer{
+  background-color: rgb(26,116,125) ;
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  color:white;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#profilePic{
+  max-height: 25rem;
+}
+
+#logo{
+  max-height: 3.5rem;
+  padding: 0.5rem;
+  color: white;
+  filter: invert(100%);
+  align-self: center;
+  text-align: center;
+  justify-self: center;
+}
+
+h1{
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  align-self: center;
+  text-align: center;
+  padding: 0.3rem;
+  flex: 1;
+  letter-spacing: 0.1rem;
+}
+
+#navLinks{
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-evenly;
+}
+
+.individualNavLinks {
+  text-decoration: none;
+  color: rgb(87, 52, 0);
+  transition: font-size 0.5s, color 0.5s, text-shadow 0.5s;
+  font-size: 1.2rem;
+}
+
+.individualNavLinks:hover {
+  color: rgb(119, 71, 0);
+  font-size: 1.3rem;
+  text-shadow: 3px 3px 3px grey;
+}
+
+.individualNavLinks:visited{
+  color: rgb(68, 41, 0);
+}
+
+.footerImages{
+  max-height: 3.5rem;
+  margin: 0.3rem;
+  padding: 0.5rem;
+  color: white;
+  filter: invert(100%);
+  align-self: center;
+  text-align: center;
+  justify-self: center;
+}

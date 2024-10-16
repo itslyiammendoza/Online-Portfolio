@@ -1,0 +1,65 @@
+article {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+fieldset {
+  width: 89%;
+  padding: 1rem;
+  height: auto;
+}
+
+#title {
+  margin: 1rem auto;
+  font-size: 1.7rem;
+}
+
+#inputs input, #textBox {
+  width: 100%;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+#textBox {
+  height: 10rem;
+}
+
+body {
+  font-size: 0.5rem;
+}
+
+#container {
+  grid-template-rows: auto;
+  gap: 0.5rem;
+}
+
+header {
+  padding: 0.5rem;
+}
+
+#logo{
+  height: 3rem;
+  padding: 0.1rem;
+}
+
+#navLinks {
+ padding: 0;
+}
+
+.individualNavLinks {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 0;
+  text-align: center;
+}
+
+.footerImages {
+  max-width: 45%;
+  margin: 0;
+}
